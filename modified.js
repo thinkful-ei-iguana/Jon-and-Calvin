@@ -23,10 +23,30 @@
 
 
 
-// loopBack(after receiving feedback on correctness, sends back to answer further questions unless array is exhausted)
+// startQuiz(should have an eventHandler that listens for a button ('click') and then calls to: 
+//      (remove the startQuiz button), (generateQuestion), (questionNumberDisplay), (questionAnswerForm).css)
+// currentQuestionNumber(show number of questions already answered)
 // generateQuestion(should request the next question in the array)
-// userSelectAnswer(should listen for an eventHandler('click') basically activating once the user has clicked the submit button)
+// userSubmitAnswer(should listen for an eventHandler('click') basically activating once the user has clicked the submit button)
 // incrementScore(should increment the score if called)
+// renderQuestion(should render the question into the DOM)
+// ifAnswerCorrect(should call correctMusic, correctAnswerImg, loopBack, incrementScore, increment question number)
+// ifAnswerWrong(should call wrongMusic, wrongAnswerImg, loopBack, increment question number)
+// loopBack(sends user back to answer further questions unless array is exhausted, at which point it calls renderResults)
+// finalResults(should equal current score)
+// renderResults(should show call quizFinish)
+// quizFinish(should call finalResults showing score, should have total questions answered, 
+// should have a final screen with text encouraging a retake, should have a restartButton eventHandler listening for button ('click'))
+// correctAnswers(${score} + ' / ' + ${questionNumber})
+
+
+// for loop where 3 or less gives response to practice more
+// for loop where 4-7 means you are on track for music theory start
+// for loop where 8-10 means you've completely mastered everything about music forever, congrats!
+
+
+
+
 // QUESTIONS, ANSWERS, etc.
 
 const STORE = [
