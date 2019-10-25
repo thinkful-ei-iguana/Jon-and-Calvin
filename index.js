@@ -24,3 +24,114 @@ If they have then call finalResults function.
 
 loopBack(after receiving feedback on correctness, sends back to answer further questions until array is exhausted)
 generateQuestion(should request the next question in the array)
+
+
+
+// QUESTIONS, ANSWERS, etc.
+
+const STORE = [
+  {
+    question: 'This is a question?'
+    answers: [
+      'answer A',
+      'answer B',
+      'answer C',
+      'answer D'
+    ],
+    correctAnswer: 'Correct',
+    icon: 'link.png',
+    alt: 'alt text for hyperlink'
+  },
+
+  {
+    question: 'This is a question?'
+    answers: [
+      'answer A',
+      'answer B',
+      'answer C',
+      'answer D'
+    ],
+    correctAnswer: 'Correct',
+    icon: 'link.png',
+    alt: 'alt text for hyperlink'
+  },
+
+  {
+    question: 'This is a question?'
+    answers: [
+      'answer A',
+      'answer B',
+      'answer C',
+      'answer D'
+    ],
+    correctAnswer: 'Correct',
+    icon: 'link.png',
+    alt: 'alt text for hyperlink'
+  },
+
+  {
+    question: 'This is a question?'
+    answers: [
+      'answer A',
+      'answer B',
+      'answer C',
+      'answer D'
+    ],
+    correctAnswer: 'Correct',
+    icon: 'link.png',
+    alt: 'alt text for hyperlink'
+  },
+
+  {
+    question: 'This is a question?'
+    answers: [
+      'answer A',
+      'answer B',
+      'answer C',
+      'answer D'
+    ],
+    correctAnswer: 'Correct',
+    icon: 'link.png',
+    alt: 'alt text for hyperlink'
+  },
+
+  {
+    question: 'This is a question?'
+    answers: [
+      'answer A',
+      'answer B',
+      'answer C',
+      'answer D'
+    ],
+    correctAnswer: 'Correct',
+    icon: 'link.png',
+    alt: 'alt text for hyperlink'
+  },
+
+  {
+    question: 'This is a question?'
+    answers: [
+      'answer A',
+      'answer B',
+      'answer C',
+      'answer D'
+    ],
+    correctAnswer: 'Correct',
+    icon: 'link.png',
+    alt: 'alt text for hyperlink'
+  },
+
+  {
+    question: 'This is a question?'
+    answers: [
+      'answer A',
+      'answer B',
+      'answer C',
+      'answer D'
+    ],
+    correctAnswer: 'Correct',
+    icon: 'link.png',
+    alt: 'alt text for hyperlink'
+  },
+
+];
