@@ -1,0 +1,410 @@
+const STORE = [
+    {
+      question: 'What is one of the most important principles to follow when backpacking or camping?',
+      answers: [
+        'Always remeber to take advantage of what nature has to offer',
+        'Leave no trace',
+        'Moss always grows on the north side of a rock',
+        'Be as loud as you want to outdoors because that\'s what adventure is all about'
+        ],
+      correctAnswer: 'Leave no trace',
+      icon: 'https://i.imgur.com/Rue4wCj.png',
+      alt: 'tent icon'
+    },
+    {
+      question: 'What are the 10 essentials for backpacking or camping?',
+      answers: [
+        'Entertainment | Food | Tent | Cell Phone | Water Guns | Your pet | Cooler | Cooking utensils | Clothing | Portable sound system',
+        'Cell phone | Junk food | binoculars | sunglasses | pepper spray | ice | Sleeping bag | Camera | Enertainment | Water',
+        'Navigation | Sun protection | Insulation | First-aid supplies | Fire | Repair kit and tools | Nutrition | Hydration | Emergency Shelter',
+        'GPS | Sunglasses | Tent | Hydration | Enertainment | Insulation | Bandages | Cooler | Tools | Books'
+        ],
+        correctAnswer: 'Navigation | Sun protection | Insulation | First-aid supplies | Fire | Repair kit and tools | Nutrition | Hydration | Emergency Shelter',
+        icon: 'https://i.imgur.com/iQ0FBhB.png',
+        alt: 'shield for 10 essentials icon'
+    },
+    {
+      question: 'When backpacking what is the weight you should aim for when packing your backpack?',
+      answers: [
+        '25 lbs',
+        '50 lbs',
+        '70 lbs',
+        '100 lbs'
+        ],
+        correctAnswer: '25 lbs',
+        icon: 'https://i.imgur.com/uXukVjk.png',
+        alt: 'weight icon'
+    },
+    {
+      question: 'You are camping in bear country. How should you store your food?',
+      answers: [
+        'Bears are a myth. There\'s no need to worry about them',
+        'Always store your food on you person at all times.',
+        'Store your food in your tent',
+        'Always use a bear canistern or hang your food and personal hygiene items on a tree limb in a bear backpacking'
+        ],
+      correctAnswer: 'Always use a bear canistern or hang your food and personal hygiene items on a tree limb in a bear backpacking',
+      icon: 'https://i.imgur.com/i0Q515j.png',
+      alt: 'bear paw icon'
+    },
+    {
+      question: 'What should you never day hike without?',
+      answers: [
+        'Extra food',
+        'Hat',
+        'GPS',
+        'Cell phone'
+        ],
+      correctAnswer: 'Extra food',
+      icon: 'https://i.imgur.com/LHRMcBd.png',
+      alt: 'hat icon'
+    },
+    {
+      question: 'You forgot your water filter in the backcountry. What should you do?',
+      answers: [
+        'Just drink straight from the stream',
+        'Drink your own urine',
+        'Find a water source and boil the water to neutralize it',
+        'Don\'t drink any water'
+        ],
+      correctAnswer: 'Find a water source and boil the water to neutralize it',
+      icon: 'https://i.imgur.com/XEwf3tK.png',
+      alt: 'water bottle icon'
+    },
+    {
+      question: 'What is the safest way to cross a stream while hiking?',
+      answers: [
+      'Find flat rocks to hop across on',
+      'Look for the deepest section and cross there',
+      'Avoid acrossing where the current is strong. Look for a straight, wide, and shallow section.',
+      'Always follow the marked route no matter what'
+      ],
+      correctAnswer: 'Avoid acrossing where the current is strong. Look for a straight, wide, and shallow section.',
+      icon: 'https://i.imgur.com/Kk9t3qL.png',
+      alt: 'stream icon'
+    },
+    {
+      question: 'While hiking you get lost. What should you do now?',
+      answers: [
+        'Stay put and wait for someone to find you',
+        'Follow streams or rivers. They will eventually lead to roads',
+        'Take off running in one direction. you will eventually hit a trail.',
+        'Eat all of your food now to get the most energy that you can.'
+      ],
+      correctAnswer: 'Stay put and wait for someone to find you',
+      icon: 'https://i.imgur.com/A2cWS88.png',
+      alt: 'compass icon'
+    },
+    {
+      question: 'You just spotted a black bear while hiking. What should you do now?',
+      answers: [
+      'Play dead',
+      'Throw your food at the bear so that it will be distracted',
+      'Approach the bear. It might want to be friends with you!',
+      'If you spot the bear before it spots you, back away keeping your eyes on the bear and wait for it to pass before continuing on.'
+      ],
+      correctAnswer: 'If you spot the bear before it spots you, back away keeping your eyes on the bear and wait for it to pass before continuing on.',
+      icon: 'https://i.imgur.com/VwFRlXL.png',
+      alt: 'bear head icon'
+    },
+    {
+      question: 'What is the most dangerous animal in the wilderness?',
+      answers: [
+        'Grizzly bears',
+        'Birds',
+        'Insects',
+        'Humanbeings'
+    ],
+    correctAnswer: 'Humanbeings',
+    icon: 'https://i.imgur.com/YdcTVPW.png',
+    alt: 'skull and crossbones icon'
+    }
+];
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    border: 2px solid red;
+    font-family: 'Metrophobic', sans-serif;
+    background-color: #ffffff;
+    background: url('https://i.imgur.com/vzPnp7m.jpg') fixed;
+    color: #363946;
+}
+/*header styling*/
+
+header {
+    width: 100%;
+    padding: 30px 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+/* Clearfix */
+
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+header::after {
+    clear: both;
+}
+.col-4,
+.col-8 {
+    float: left;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+}
+.col-4 {
+    width: 33.33%
+}
+.col-8 {
+    width: 66.67%
+}
+.logo {
+    height: 150px;
+    width: 150px;
+}
+header ul li {
+    padding: 10px 20px;
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: inline;
+}
+header ul {
+    text-align: right;
+    margin-top: 50px
+}
+/*Quiz start screen styling*/
+
+.quizStart {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-top: 150px;
+}
+h1 {
+    border: 2px solid red;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+button {
+    padding: 20px;
+    border: none;
+    background-color: #38A9AF;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px
+}
+button:hover, button:focus {
+    background-color: #363946;
+    color: #ebca52
+}
+main div {
+    margin: 0 auto;
+}
+label:nth-child(1) {
+    background-color: #3866AF
+}
+label:nth-child(2) {
+    background-color: #387AAF
+}
+label:nth-child(3) {
+    background-color: #3894AF
+}
+label:nth-child(4) {
+    background-color: #38A9AF
+}
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 22px
+}
+label:hover, label:focus {
+    background-color: #AF6438
+}
+fieldset {
+    border: none;
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+input:checked {
+    border: 8px solid #ebca52;
+}
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-transform: uppercase
+}
+form button {
+    padding: 20px;
+    border: none;
+    background-color: #ebca52;
+    color: #363946;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+form button:hover, form button:focus {
+    background-color: #363946;
+    color: #ebca52
+}
+.answer {
+    flex: 1 1 auto;
+}
+.questionAnswerForm {
+    display: none;
+    width: 50%;
+}
+.correctFeedback {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(245, 255, 255, 1) 0%, rgba(124, 225, 230, 1) 100%);
+    padding-top: 40px
+}
+.correctFeedback button {
+    width: 100%
+}
+.correctFeedback p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px
+}
+.correctFeedback span {
+    color: #AF6438;
+}
+.correctFeedback img {
+    width: 150px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    background-color: #38A9AF;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px
+}
+h3 {
+    color: #AF6438;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.results img {
+    width: 150px;
+    height: auto;
+}
+.results p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px
+}
+.results p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0
+}
+.restartButton {
+    margin-top: 40px
+}
+@media screen and (max-width: 1190px) {
+    .questionAnswerForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px
+    }
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: auto;
+    }
+    header ul {
+        margin: 10px;
+        text-align: center
+    }
+    h1 {
+        font-size: 1.5em
+    }
+    header ul li {
+        padding: 10px;
+        font-size: 18px
+    }
+    .col-4,
+    .col-8 {
+        width: 100%
+    }
+    .quizStart {
+        width: 100%;
+        padding: 40px;
+        margin-top: 0
+    }
+    h2 {
+        font-size: 18px
+    }
+    .questionAnswerForm {
+        width: 100%;
+        padding: 20px;
+        margin-top: 0
+    }
+    label {
+        font-size: 16px;
+        padding: 15px
+    }
+    .correctFeedback img {
+        width: 100px;
+        height: auto
+    }
+    .correctFeedback p {
+        font-size: 16px;
+        margin: 0 15px
+    }
+    .results p:first-of-type {
+        font-size: 18px
+    }
+    h3 {
+        font-size: 25px
+    }
+}
