@@ -128,10 +128,9 @@ const STORE = [
     box-sizing: border-box;
 }
 body {
-    border: 2px solid red;
-    font-family: 'Metrophobic', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #ffffff;
-    background: url('https://i.imgur.com/vzPnp7m.jpg') fixed;
+    background: url('https://cdn.shopify.com/s/files/1/0702/4211/products/Extracurricular.jpg?v=1470188477') fixed;
     color: #363946;
 }
 /*header styling*/
@@ -139,7 +138,7 @@ body {
 header {
     width: 100%;
     padding: 30px 0;
-    color: #ffffff;
+    color: black;
     font-size: 20px;
 }
 /* Clearfix */
@@ -189,10 +188,9 @@ header ul {
     margin-top: 150px;
 }
 h1 {
-    border: 2px solid red;
     text-align: center;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: black;
     font-size: 2em;
     text-transform: uppercase;
     font-weight: normal;
@@ -200,7 +198,7 @@ h1 {
 button {
     padding: 20px;
     border: none;
-    background-color: #38A9AF;
+    background-color: rgb(110, 4, 4);
     color: #ffffff;
     font-size: 18px;
     text-transform: uppercase;
@@ -360,6 +358,7 @@ h3 {
         height: 120px;
         display: block;
         margin: auto;
+        opacity: 0;
     }
     header ul {
         margin: 10px;
