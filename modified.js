@@ -13,6 +13,7 @@ const STORE = {
         'Be as loud as you want to outdoors because that\'s what adventure is all about'
       ],
       correctAnswer: 'Leave no trace',
+      src: 'https://i.pinimg.com/originals/2f/53/7a/2f537a79b3222328ea148c68b30425cd.png',
       icon: 'https://i.imgur.com/Rue4wCj.png',
       alt: 'tent icon'
     },
