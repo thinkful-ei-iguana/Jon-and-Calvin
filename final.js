@@ -1,4 +1,6 @@
 'use strict';
+const questionNumber = 0;
+const score = 0;
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
@@ -22,14 +24,6 @@ function startGame() {
   questionContainerElement.classList.remove('hide');
   setNextQuestion();
 }
-
-//NEW FUNCTION ADDED
-function correctAnswer(){
-  console.log("hello");
-  return questions[2];
-  
-}
-
 
 function setNextQuestion() {
   resetState();
