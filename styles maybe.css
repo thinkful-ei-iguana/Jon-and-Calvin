@@ -22,11 +22,12 @@ body {
 }
 
 body.correct {
-  --hue: var(--hue-correct);
+background-color: blueviolet;
+background-image: ('https://i.pinimg.com/originals/03/e8/33/03e8330ad0272fac3713fab8626fad18.jpg') z-index: 1;
 }
 
 body.wrong {
-  --hue: var(--hue-wrong);
+  background-image: ('https://i.pinimg.com/originals/97/52/b4/9752b48c2b57577f27815b0ba4757c6e.jpg');
 }
 
 .container {

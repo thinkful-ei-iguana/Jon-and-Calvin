@@ -4,6 +4,8 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question').getElementsByTagName('img')[0];
 const answerButtonsElement = document.getElementById('answer-buttons');
+const rightAnswerImg = 'https://i.pinimg.com/originals/03/e8/33/03e8330ad0272fac3713fab8626fad18.jpg';
+const wrongAnswerImg = 'https://i.pinimg.com/originals/97/52/b4/9752b48c2b57577f27815b0ba4757c6e.jpg';
 
 let shuffledQuestions, currentQuestionIndex;
 
@@ -21,8 +23,17 @@ function startGame() {
   setNextQuestion();
 }
 
+//NEW FUNCTION ADDED
+function correctAnswer(){
+  console.log("hello");
+  return questions[2];
+  
+}
+
+
 function setNextQuestion() {
   resetState();
+  //correctOrIncorrect()
   showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
@@ -34,8 +45,9 @@ function showQuestion(question) {
     button.classList.add('btn');
     if (answer.correct) {
       button.dataset.correct = answer.correct;
+
     }
-    button.addEventListener('click', selectAnswer);
+    button.addEventListener('click', selectAnswer); //listening for click selectAnswer
     answerButtonsElement.appendChild(button);
   });
 }
@@ -48,6 +60,15 @@ function resetState() {
   }
 }
 
+
+function setAnswerImg(correct) {
+  if (correct) {
+    questionElement.src = rightAnswerImg;
+  } else {
+    questionElement.src = wrongAnswerImg;
+  }
+}
+
 function selectAnswer(e) {
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
@@ -55,7 +76,9 @@ function selectAnswer(e) {
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
   });
+  setAnswerImg(correct);
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    
     nextButton.classList.remove('hide');
   } else {
     startButton.innerText = 'Restart';
@@ -151,3 +174,8 @@ const questions = [
     ]
   },
 ];
+
+const correctAndWrongImg = [
+  {correctImg: 'https://i.pinimg.com/originals/03/e8/33/03e8330ad0272fac3713fab8626fad18.jpg'},
+  {incorrectImg: 'https://i.pinimg.com/originals/97/52/b4/9752b48c2b57577f27815b0ba4757c6e.jpg'}
+]; 
