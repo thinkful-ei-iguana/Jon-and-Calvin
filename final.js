@@ -38,7 +38,9 @@ function setNextQuestion() {
 }
 
 function showQuestion(question) {
+
   questionElement.src = question.question;
+  questionElement.alt = question.alt;
   question.answers.forEach(answer => {
     const button = document.createElement('button');
     button.innerText = answer.text;
@@ -100,6 +102,12 @@ function clearStatusClass(element) {
   element.classList.remove('wrong');
 }
 
+
+
+
+
+
+
 const questions = [
   {
     question: 'https://i.pinimg.com/originals/2f/53/7a/2f537a79b3222328ea148c68b30425cd.png',
@@ -107,8 +115,9 @@ const questions = [
       { text: ' i4/3', correct: false },
       { text: 'i6', correct: true},
       { text: 'VII', correct: false},
-      { text: 'III', correct: false }
-    ]
+      { text: 'III', correct: false },
+    ],
+    alt: 'In the key of C minor, what is the Roman numeral and inversion symbol for the following chord?'
   },
   {
     question: 'https://i.pinimg.com/originals/cd/06/02/cd0602ae9c79e2a8c696d200f32716d6.png',
@@ -116,8 +125,9 @@ const questions = [
       { text: 'Perfect Fourth', correct: false },
       { text: 'Diminished Fourth', correct: false },
       { text: 'Augmented Fourth', correct: true },
-      { text: 'Major Third', correct: false }
-    ]
+      { text: 'Major Third', correct: false },
+    ],
+    alt: 'What is the interval between these two pitches?'
   },
   {
     question: 'https://i.pinimg.com/originals/a8/f0/84/a8f0846debfe7e74acacc97c2eb49422.png',
@@ -125,8 +135,9 @@ const questions = [
       { text: 'Doubled Leading Tone', correct: false },
       { text: 'Voice Crossing', correct: false },
       { text: 'Parallel Octaves', correct: false },
-      { text: 'Parallel Fifths', correct: true }
-    ]
+      { text: 'Parallel Fifths', correct: true },
+    ],
+    alt: 'What part-writing error is shown in this example?'
   },
   {
     question: 'https://i.pinimg.com/originals/af/fd/32/affd32af6ef956b99b06213f12b3baa7.png',
@@ -134,8 +145,9 @@ const questions = [
       { text: 'Major Seventh', correct: false },
       { text: 'Minor Seventh', correct: false },
       { text: 'Diminished Seventh', correct: true },
-      { text: 'Half-Diminished Seventh', correct: false }
-    ]
+      { text: 'Half-Diminished Seventh', correct: false },
+    ],
+    alt: 'What is the quality of this chord?'
   },
   {
     question: 'https://i.pinimg.com/originals/1c/2d/3c/1c2d3c6ff688352b5b6ceef39960d634.png',
@@ -143,8 +155,10 @@ const questions = [
       { text: 'Doubled Third', correct: true },
       { text: 'Soprano voice is out of range', correct: false },
       { text: 'Tripled Root', correct: false },
-      { text: 'Incomplete Chord', correct: false }
-    ]
+      { text: 'Incomplete Chord', correct: false },
+      
+    ],
+    alt: 'What part-writing error is shown in this example'
   },
   {
     question: 'https://i.pinimg.com/originals/3f/cf/03/3fcf03cee944a18eea064e71014e482f.png',
@@ -152,8 +166,9 @@ const questions = [
       { text: 'Marcato', correct: false },
       { text: 'Legato', correct: false },
       { text: 'Staccato', correct: true },
-      { text: 'Tenuto', correct: false }
-    ]
+      { text: 'Tenuto', correct: false },
+    ],
+    alt: 'In this example, what type of articulation marking is show in the left-hand?'
   },
   {
     question: 'https://i.pinimg.com/originals/7e/87/65/7e8765c1a7a1dd15586ed930bb0fcda5.png',
@@ -161,8 +176,9 @@ const questions = [
       { text: 'V6/5', correct: true },
       { text: 'V4/3', correct: false },
       { text: 'V6/4', correct: false },
-      { text: 'vii°', correct: false }
-    ]
+      { text: 'vii°', correct: false },
+    ],
+    alt: 'In the key of E major, what is the Roman numeral and inversion symbol for the following chord?'
   },
   {
     question: 'https://i.pinimg.com/originals/04/12/6f/04126f6071993ecb9c8b5640cde024fd.png',
@@ -170,8 +186,9 @@ const questions = [
       { text: 'Diminished Seventh', correct: false },
       { text: 'Augmented Seventh', correct: false },
       { text: 'Minor Seventh', correct: false },
-      { text: 'Major Seventh', correct: true }
-    ]
+      { text: 'Major Seventh', correct: true },
+    ],
+    alt: 'What is the harmonic interval between these two pitches?'
   },
 ];
 

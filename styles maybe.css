@@ -21,15 +21,6 @@ body {
   background-color: hsl(var(--hue), 100%, 20%);
 }
 
-body.correct {
-background-color: blueviolet;
-background-image: ('https://i.pinimg.com/originals/03/e8/33/03e8330ad0272fac3713fab8626fad18.jpg') z-index: 1;
-}
-
-body.wrong {
-  background-image: ('https://i.pinimg.com/originals/97/52/b4/9752b48c2b57577f27815b0ba4757c6e.jpg');
-}
-
 .container {
   width: 800px;
   max-width: 80%;
@@ -84,3 +75,176 @@ body.wrong {
 .hide {
   display: none;
 }
+
+
+
+
+
+
+
+
+/* SMARTPHONES (iPhone 5) PORTRAIT */
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  img {
+    width: 240px;
+    justify-content: center;
+  }
+
+  .container {
+  width: 350px;
+  height: 380px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  }
+}
+
+
+/* SMARTPHONES (Galaxy S5) PORTRAIT */
+@media only screen and (min-width: 360px) {
+  img {
+    width: 270px;
+    justify-content: center;
+  }
+
+  .container {
+  width: 350px;
+  height: 380px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  }
+}
+
+/* SMARTPHONES (iPhone 6/7/8) PORTRAIT */
+@media only screen and (min-width: 375px) {
+  img {
+    width: 280px;
+    justify-content: center;
+  }
+
+  .container {
+  width: 350px;
+  height: 380px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  }
+}
+
+/* SMARTPHONES (Pixel 2 && Pixel 2 XL) PORTRAIT */
+@media only screen and (min-width: 411px){
+  img {
+    width: 310px;
+    justify-content: center;
+  }
+
+  .container {
+  width: 350px;
+  height: 400px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  }
+}
+
+
+/* SMARTPHONES (iPhone+) PORTRAIT */
+@media only screen and (min-width: 414px)  {
+  img {
+    width: 315px;
+    justify-content: center;
+  }
+
+  .container {
+  width: 350px;
+  height: 400px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+
+  img {
+    width: 270px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+  width: 350px;
+  height: 380px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  }
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+
+  img {
+    width: 580px;
+    justify-content: center;
+  
+    
+
+  }
+
+  .container {
+  width: 600px;
+  height: 640px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  }
+
+  .btn {
+    font-size: 1.5em;
+  }
+
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+  img {
+    width: 800px;
+    justify-content: center;
+
+  }
+
+  .container {
+  width: 850px;
+  height: 880px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  }
+
+  .btn {
+    font-size: 2em;
+  }
+
+} 
