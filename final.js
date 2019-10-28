@@ -1,6 +1,6 @@
 'use strict';
-const questionNumber = 0;
-const score = 0;
+let questionNumber = 0;
+let currentScore = 0;
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
@@ -9,6 +9,14 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 const rightAnswerImg = 'https://i.pinimg.com/originals/03/e8/33/03e8330ad0272fac3713fab8626fad18.jpg';
 const wrongAnswerImg = 'https://i.pinimg.com/originals/97/52/b4/9752b48c2b57577f27815b0ba4757c6e.jpg';
 
+
+//current wishlist of changes: question number, score, should be told right/wrong answer (check whether current implementation works)
+//wishlist cont: render answer choices in a form, add to gist
+
+
+
+
+
 let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener('click', startGame);
@@ -16,6 +24,28 @@ nextButton.addEventListener('click', () => {
   currentQuestionIndex++;
   setNextQuestion();
 });
+
+function changeQuestionNumber() {
+  if(questionNumber<questions.length) {
+    questionNumber ++;
+  } $('.questionNumber').text(questionNumber+1);
+}
+
+`<div class="question-${questionNumber}">`
+
+function changeScore() {
+  `<div class="score-${currentScore}">`
+  currentScore ++;
+}
+
+
+
+
+
+
+//increment question number function changeQuestionNumber () { //if (questionNumber < STORE.length) { questionNumber ++; //} $('.questionNumber').text(questionNumber+1); }
+
+//increment score function changeScore () { score ++; }
 
 function startGame() {
   startButton.classList.add('hide');
