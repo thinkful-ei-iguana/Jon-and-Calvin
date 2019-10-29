@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="styles maybe.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script defer src="final.js"></script>
-  <title>Quiz App</title>
-</head>
-<body>
-  <div class="container">
-    <div id="question-container" class="hide">
-      <div id="question"><img/></div>
-    <!-- <div id="answerImages" class="hide"><img/></div> --> 
-      <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Backcountry Quiz App</title>
+    <meta name="description" content="Test your backcountry, backpacking, and outdoor knowledge">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header role="banner">
+      <div class="col-4">
+        <a href="index.html">
+        </a>
       </div>
-    </div>
-    <div class="controls">
-      <button id="start-btn" class="start-btn btn">Start</button>
-      <button id="next-btn" class="next-btn btn hide">Next</button>
-    </div>
-  </div>
-</body>
+      <div class="col-8">
+        <ul>
+          <li>Question: <span class="questionNumber">0</span>/8</li>
+          <li>Score: <span class="score">0</span></li>
+        </ul>
+      </div>
+    </header>
+    <main role="main">
+      <div class="quizStart">
+        <h1>Ready for a music theory quiz?</h1>
+        <button type="button" class="startButton">Begin!</button>
+      </div>
+      <div class="questionAnswerForm"></div>
+    </main>
+  </body>
+  <script defer src="index.js"></script>
 </html>
