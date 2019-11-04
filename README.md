@@ -1,3 +1,5 @@
-# Jonathan Jackson-and-Calvin Rosehart
+I worked on this project as a pair with Jonathan Jackson.
 
-https://docs.google.com/document/d/1qcpl7sWyU2IBhESwY4jMuTRJCbKexXoPPm4rAi7lDFQ/edit?usp=sharing
+
+
+# Jonathan Jackson-and-Calvin Rosehart
